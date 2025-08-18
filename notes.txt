@@ -1,0 +1,17 @@
+langgraph_multi_agent_project/
+├── agents/                  # Chứa code cho các agent chuyên biệt
+│   ├── __init__.py
+│   ├── math_agent.py        # Định nghĩa math_agent với tools cộng/nhân
+│   └── research_agent.py    # Định nghĩa research_agent với tool web_search
+├── nodes/                   # Chứa code cho các node trong graph
+│   ├── __init__.py
+│   ├── fallback.py          # Node fallback: Hỏi lại hoặc trò chuyện
+│   └── supervisor.py        # Node supervisor: Quyết định route đến agent
+├── utils/                   # Các hàm hỗ trợ chung
+│   ├── __init__.py
+│   └── tools.py             # Định nghĩa các tools (add, multiply, web_search)
+├   ├── config.py            # Cấu hình (API key, model name)
+
+├── main.py                  # File chính: Build graph, compile, và chạy
+├── requirements.txt         # Danh sách thư viện cần cài
+└── README.md                # Hướng dẫn project

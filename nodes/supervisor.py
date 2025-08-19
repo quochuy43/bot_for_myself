@@ -4,17 +4,20 @@ from langgraph.graph import MessagesState
 from agents.math_agent import get_math_agent
 from agents.research_agent import get_research_agent
 
+SUPERVISOR_PROMPT = """You are the Supervisor. Your job is to decide which expert should solve the query.
+
+    RULES:
+    - Output must be exactly one word: MATH or RESEARCH. No explanation.
+    - MATH = numerical or symbolic calculations, arithmetic, algebra, equations.
+    - RESEARCH = facts, data lookup, real-world knowledge ("FAANG headcount 2024", "who is the CEO of Google").
+    - If the query has both math and research, choose RESEARCH.
+
+    Answer format: MATH or RESEARCH (uppercase).
+"""
+
 def supervisor_node(state: MessagesState):
     messages = state["messages"]
-    system_prompt = SystemMessage(
-        content=(
-            "You are a supervisor managing two experts: math_expert and research_expert. "
-            "Decide strictly: 'math' for math problems (e.g., '3 + 4'), "
-            "'research' for research questions (e.g., 'headcount of FAANG 2024'). "
-            "Respond with a single word: 'math' or 'research'."
-        )
-    )
-    decision_response = model.invoke([system_prompt] + messages)
+    decision_response = model.invoke([SystemMessage(content=SUPERVISOR_PROMPT)] + messages)
     decision = decision_response.content.strip().lower()
     
     if decision == "math":

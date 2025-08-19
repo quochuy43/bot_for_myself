@@ -2,18 +2,20 @@ from langchain_core.messages import SystemMessage
 from langgraph.graph import MessagesState
 from utils.config import model
 
+FINALIZER_PROMPT = """You are the Final Answer Composer.
+
+    Your job: 
+    1. Consolidate all outputs from agents into ONE clear, complete answer for the user.
+    2. If numbers from agents require further calculation, do it and present the final result.
+    3. If crucial info is missing, ask ONE specific clarification question.
+    4. Avoid filler or chit-chat. Be concise, factual, and clear.
+
+    Format:
+    - If you have enough info → give the final answer.
+    - If missing info → ask one clear question.
+"""
+
 def finalizer_node(state: MessagesState):
     messages = state["messages"]
-    system_prompt = SystemMessage(
-        content=(
-            "As the Final Answer Composer, you will synthesize information from the conversation and outputs from "
-            "specialist agents (e.g., math_expert, research_expert) to produce a definitive response. "
-            "Follow these rules for your final answer: "
-            "1. **Consolidate:** Combine all relevant information into a single, cohesive answer. "
-            "2. **Calculate:** If specialist outputs contain numbers that require a final calculation, perform it and provide the result. "
-            "3. **Clarify:** If crucial information is missing, state a single, specific question to get the needed details. "
-            "Do not provide incomplete answers or conversational filler."
-        )
-    )
-    resp = model.invoke([system_prompt] + messages)
+    resp = model.invoke([SystemMessage(content=FINALIZER_PROMPT)] + messages)
     return {"messages": messages + [resp]}

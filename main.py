@@ -3,6 +3,7 @@ from nodes.supervisor import supervisor_node
 from nodes.fallback import fallback_node
 from nodes.planner import planner_node
 from nodes.finalizer import finalizer_node
+from langchain_core.messages import HumanMessage
 
 # Mở rộng MessagesState để lưu decision từ supervisor
 class ExtendedState(MessagesState):
@@ -41,9 +42,28 @@ graph_builder.add_edge("fallback", END)
 graph = graph_builder.compile()
 
 # Chạy ví dụ
+# if __name__ == "__main__":
+#     input_message = HumanMessage(content="what's the combined headcount of the FAANG companies in 2024?")
+#     result = graph.invoke({"messages": [input_message]})
+#     print(result)
+#     print(result["messages"][-1].content)
+
+
 if __name__ == "__main__":
-    from langchain_core.messages import HumanMessage
-    input_message = HumanMessage(content="what's the combined headcount of the FAANG companies in 2024?")
-    result = graph.invoke({"messages": [input_message]})
-    print(result)
-    print(result["messages"][-1].content)
+    while True:
+        user_input = input("You: ")
+
+        # Kiểm tra điều kiện thoát
+        if user_input.lower() == 'exit':
+            print("exit...")
+            break
+        
+        input_message = HumanMessage(content=user_input)
+        
+        try:
+            result = graph.invoke({"messages": [input_message]})
+            print("Final answer: ")
+            print(result["messages"][-1].content)
+            
+        except Exception as e:
+            print(f"Có lỗi xảy ra: {e}")

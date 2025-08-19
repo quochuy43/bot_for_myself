@@ -38,10 +38,9 @@ graph_builder.add_edge("supervisor", "finalizer")
 graph_builder.add_edge("finalizer", END)
 graph_builder.add_edge("fallback", END)
 
-# Compile graph
 graph = graph_builder.compile()
 
-# Chạy ví dụ
+
 # if __name__ == "__main__":
 #     input_message = HumanMessage(content="what's the combined headcount of the FAANG companies in 2024?")
 #     result = graph.invoke({"messages": [input_message]})
@@ -53,7 +52,6 @@ if __name__ == "__main__":
     while True:
         user_input = input("You: ")
 
-        # Kiểm tra điều kiện thoát
         if user_input.lower() == 'exit':
             print("exit...")
             break
@@ -63,6 +61,8 @@ if __name__ == "__main__":
         try:
             result = graph.invoke({"messages": [input_message]})
             print("Final answer: ")
+            print(result)
+            # final_res = result["messages"][-1].content.lstrip(": ").strip()
             print(result["messages"][-1].content)
             
         except Exception as e:

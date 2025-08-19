@@ -13,4 +13,6 @@ FALLBACK_PROMPT = """You are a friendly fallback assistant.
 def fallback_node(state: MessagesState):
     messages = state["messages"]
     response = model.invoke([SystemMessage(content=FALLBACK_PROMPT)] + messages)
+    response.content = response.content.lstrip(": ").strip()
+    # print(response)
     return {"messages": messages + [response]}

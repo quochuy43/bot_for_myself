@@ -4,15 +4,16 @@ from langgraph.graph import MessagesState
 from agents.math_agent import get_math_agent
 from agents.research_agent import get_research_agent
 
-SUPERVISOR_PROMPT = """You are the Supervisor. Your job is to decide which expert should solve the query.
+SUPERVISOR_PROMPT = """
+You are the Supervisor. Your job is to decide which expert should solve the query.
 
-    RULES:
-    - Output must be exactly one word: MATH or RESEARCH. No explanation.
-    - MATH = numerical or symbolic calculations, arithmetic, algebra, equations.
-    - RESEARCH = facts, data lookup, real-world knowledge ("FAANG headcount 2024", "who is the CEO of Google").
-    - If the query has both math and research, choose RESEARCH.
+RULES:
+- Output must be exactly one word: MATH or RESEARCH. No explanation.
+- MATH = numerical or symbolic calculations, arithmetic, algebra, equations.
+- RESEARCH = facts, data lookup, real-world knowledge ("FAANG headcount 2024", "who is the CEO of Google").
+- If the query has both math and research, choose RESEARCH.
 
-    Answer format: MATH or RESEARCH (uppercase).
+Answer format: MATH or RESEARCH (uppercase).
 """
 
 def supervisor_node(state: MessagesState):

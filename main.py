@@ -4,6 +4,7 @@ from nodes.fallback import fallback_node
 from nodes.planner import planner_node
 from nodes.finalizer import finalizer_node
 from langchain_core.messages import HumanMessage
+from langgraph.checkpoint.memory import MemorySaver
 
 # Mở rộng MessagesState để lưu decision từ supervisor
 class ExtendedState(MessagesState):
@@ -31,26 +32,20 @@ graph_builder.add_conditional_edges(
     {"supervisor": "supervisor", "fallback": "fallback"}
 )
 
-# Từ Fallback, kết thúc
-# graph_builder.add_edge("fallback", END)
-
 graph_builder.add_edge("supervisor", "finalizer")
 graph_builder.add_edge("finalizer", END)
 graph_builder.add_edge("fallback", END)
 
+# memory = MemorySaver()
+
 graph = graph_builder.compile()
-
-
-# if __name__ == "__main__":
-#     input_message = HumanMessage(content="what's the combined headcount of the FAANG companies in 2024?")
-#     result = graph.invoke({"messages": [input_message]})
-#     print(result)
-#     print(result["messages"][-1].content)
 
 
 if __name__ == "__main__":
     while True:
         user_input = input("You: ")
+
+        # what's the combined headcount of the FAANG companies in 2024?
 
         if user_input.lower() == 'exit':
             print("exit...")
@@ -59,11 +54,11 @@ if __name__ == "__main__":
         input_message = HumanMessage(content=user_input)
         
         try:
+            # use config to use memorysaver
+            # config = {"configurable": {"thread_id": "user-43"}}
             result = graph.invoke({"messages": [input_message]})
             print("Final answer: ")
-            print(result)
-            # final_res = result["messages"][-1].content.lstrip(": ").strip()
             print(result["messages"][-1].content)
             
         except Exception as e:
-            print(f"Có lỗi xảy ra: {e}")
+            print(f"Errors: {e}")

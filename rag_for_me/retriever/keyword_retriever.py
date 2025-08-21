@@ -1,7 +1,7 @@
 import os
 import pickle
 from langchain_community.retrievers import TFIDFRetriever
-from rag_for_me.build.loader.document_loader import split_markdown_by_heading
+from rag_for_me.build_vector.loader.document_loader import split_markdown_by_heading
 
 CACHE_DIR = os.path.join("rag_for_me", "cache")
 CACHE_PATH = os.path.join(CACHE_DIR, "keyword_retriever.pkl")

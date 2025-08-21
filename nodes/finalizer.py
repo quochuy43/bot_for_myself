@@ -17,12 +17,12 @@ FORMAT:
 - If missing info, ask one clear question.
 """
 
-def finalizer_node(state: MessagesState):
+async def finalizer_node(state: MessagesState):
     messages = state["messages"]
     finalizer_input = [SystemMessage(content=FINALIZER_PROMPT)] + messages + [
         # Ép model phải tạo final answer bằng cách bổ sung HumanMessage
         HumanMessage(content="Please compose the final answer for the user")
     ]
-    response = model.invoke(finalizer_input)
+    response = await model.ainvoke(finalizer_input)
     # response.content = response.content.lstrip(": ").strip()
     return {"messages": messages + [response]}

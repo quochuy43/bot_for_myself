@@ -4,9 +4,10 @@ from nodes.fallback import fallback_node
 from nodes.planner import planner_node
 from nodes.finalizer import finalizer_node
 from langchain_core.messages import HumanMessage
-from langgraph.checkpoint.mongodb import MongoDBSaver
+from langgraph.checkpoint.mongodb import AsyncMongoDBSaver
 from pymongo import MongoClient
 import uuid
+import asyncio
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -47,12 +48,9 @@ except Exception as e:
     print(f"Errors in MongoDB: {e}")
     exit(1)
 
-
-with MongoDBSaver.from_conn_string(DB_URI) as checkpointer:
-    graph = graph_builder.compile(checkpointer=checkpointer)
-
-    if __name__ == "__main__":
-
+async def main():
+    async with AsyncMongoDBSaver.from_conn_string(DB_URI) as checkpointer:
+        graph = graph_builder.compile(checkpointer=checkpointer)
         config = {"configurable": {"thread_id": "qh-43"}}
 
         while True:
@@ -67,8 +65,11 @@ with MongoDBSaver.from_conn_string(DB_URI) as checkpointer:
             input_message = HumanMessage(content=user_input)
             
             try:
-                result = graph.invoke({"messages": [input_message]}, config=config)
+                result = await graph.ainvoke({"messages": [input_message]}, config=config)
                 print("Final answer:", result["messages"][-1].content)
                 
             except Exception as e:
                 print(f"Errors: {e}")
+
+if __name__ == "__main__":
+    asyncio.run(main())

@@ -15,12 +15,12 @@ You are a friendly and warm conversational assistant. Your primary job is to cha
     - If the query is unclear: Politely ask for clarification.
     - For casual conversation:** Respond naturally 
 3.  Your limitations:
-    You absolutely **do not** perform math or research. Those tasks belong to other expert agents.
+    You absolutely **do not** perform math, research or rag. Those tasks belong to other expert agents.
 """
 
-def fallback_node(state: MessagesState):
+async def fallback_node(state: MessagesState):
     messages = state["messages"]
-    response = model.invoke([SystemMessage(content=FALLBACK_PROMPT)] + messages)
+    response = await model.ainvoke([SystemMessage(content=FALLBACK_PROMPT)] + messages)
     # response.content = response.content.lstrip(": ").strip()
     # print(response)
     return {"messages": messages + [response]}

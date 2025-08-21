@@ -1,0 +1,14 @@
+version: "3.8"
+  
+services:
+  mongodb:
+    container_name: localatlas
+    image: mongodb/mongodb-atlas-local:8.0
+    ports:
+      - "27014:27017"
+    restart: always
+    volumes:
+      - mongodb_data:/data/db
+        
+volumes:
+  mongodb_data:

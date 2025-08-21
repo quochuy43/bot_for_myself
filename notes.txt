@@ -1,3 +1,14 @@
 Nó sẽ luôn tạo một database tên mặc định là checkpointing_db, trong đó có 2 collection:
 checkpoints: lưu trạng thái (state, messages, thread_id…)
 checkpoint_writes: log lại từng bước write.
+
+Thông tin cá nhân cơ bản (tên, tuổi, quê quán, ngành học)
+Hành trình học tập & kinh nghiệm
+Sở thích cá nhân
+Thần tượng / nguồn cảm hứng
+Kỹ năng chuyên môn (AI, Python, ML, etc.)
+Dự án đã làm (kể cả portfolio project)
+Mục tiêu & định hướng sự nghiệp
+Kỷ niệm đáng nhớ
+Triết lý sống, quan điểm cá nhân
+Liên hệ (LinkedIn, Github, email)

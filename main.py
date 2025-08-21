@@ -6,6 +6,7 @@ from nodes.finalizer import finalizer_node
 from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.mongodb import MongoDBSaver
 from pymongo import MongoClient
+import uuid
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -37,37 +38,37 @@ graph_builder.add_edge("supervisor", "finalizer")
 graph_builder.add_edge("finalizer", END)
 graph_builder.add_edge("fallback", END)
 
-# DB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/history_chatbot")
-# try:
-#     client = MongoClient(DB_URI)
-#     client.admin.command('ping')
-#     print("Connect mongo successfully!")
-# except Exception as e:
-#     print(f"Errors in MongoDB: {e}")
-#     exit(1)
+DB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/history_chatbot")
+try:
+    client = MongoClient(DB_URI)
+    client.admin.command('ping')
+    print("Connect mongo successfully!")
+except Exception as e:
+    print(f"Errors in MongoDB: {e}")
+    exit(1)
 
 
-# with MongoDBSaver.from_conn_string(DB_URI) as checkpointer:
-graph = graph_builder.compile()
+with MongoDBSaver.from_conn_string(DB_URI) as checkpointer:
+    graph = graph_builder.compile(checkpointer=checkpointer)
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
 
-    config = {"configurable": {"thread_id": "lvqh-43"}}
+        config = {"configurable": {"thread_id": "qh-43"}}
 
-    while True:
-        user_input = input("You: ")
+        while True:
+            user_input = input("You: ")
 
-        # what's the combined headcount of the FAANG companies in 2024?
+            # what's the combined headcount of the FAANG companies in 2024?
 
-        if user_input.lower() == 'exit':
-            print("exit...")
-            break
-        
-        input_message = HumanMessage(content=user_input)
-        
-        try:
-            result = graph.invoke({"messages": [input_message]})
-            print("Final answer:", result["messages"][-1].content)
+            if user_input.lower() == 'exit':
+                print("exit...")
+                break
             
-        except Exception as e:
-            print(f"Errors: {e}")
+            input_message = HumanMessage(content=user_input)
+            
+            try:
+                result = graph.invoke({"messages": [input_message]}, config=config)
+                print("Final answer:", result["messages"][-1].content)
+                
+            except Exception as e:
+                print(f"Errors: {e}")

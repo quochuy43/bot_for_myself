@@ -24,5 +24,5 @@ def finalizer_node(state: MessagesState):
         HumanMessage(content="Please compose the final answer for the user")
     ]
     response = model.invoke(finalizer_input)
-    response.content = response.content.lstrip(": ").strip()
+    # response.content = response.content.lstrip(": ").strip()
     return {"messages": messages + [response]}

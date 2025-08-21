@@ -1,0 +1,3 @@
+Nó sẽ luôn tạo một database tên mặc định là checkpointing_db, trong đó có 2 collection:
+checkpoints: lưu trạng thái (state, messages, thread_id…)
+checkpoint_writes: log lại từng bước write.

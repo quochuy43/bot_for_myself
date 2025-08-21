@@ -21,6 +21,6 @@ You are a friendly and warm conversational assistant. Your primary job is to cha
 def fallback_node(state: MessagesState):
     messages = state["messages"]
     response = model.invoke([SystemMessage(content=FALLBACK_PROMPT)] + messages)
-    response.content = response.content.lstrip(": ").strip()
+    # response.content = response.content.lstrip(": ").strip()
     # print(response)
     return {"messages": messages + [response]}

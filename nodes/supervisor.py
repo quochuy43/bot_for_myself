@@ -19,7 +19,8 @@ Answer format: MATH or RESEARCH (uppercase).
 def supervisor_node(state: MessagesState):
     messages = state["messages"]
     decision_response = model.invoke([SystemMessage(content=SUPERVISOR_PROMPT)] + messages)
-    decision = decision_response.content.lstrip(": ").strip().lower()
+    # decision = decision_response.content.lstrip(": ").strip().lower()
+    decision = decision_response.content.strip().lower()
     
     if decision == "math":
         agent = get_math_agent()

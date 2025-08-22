@@ -6,7 +6,7 @@ from rag_for_me.retriever.hybrid_retriever import get_hybrid_retriever
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from rag_for_me.prompt import rag_prompt_template
-from langchain_openai import ChatOpenAI
+from utils.config import model
 
 # IDF (inverse document frequency): độ hiếm của từ đó trên toàn bộ tập
 
@@ -19,11 +19,7 @@ def format_docs(docs):
     return formatted
 
 def get_rag_chain():
-
-    llm = ChatOpenAI(
-        model="gpt-4o-mini",
-        temperature=0.3,
-    )
+    llm = model
     retriever = get_hybrid_retriever(alpha=0.5)
     return (
         {"context": retriever | format_docs, "query": RunnablePassthrough()}
@@ -32,20 +28,20 @@ def get_rag_chain():
         | StrOutputParser()
     )
 
-if __name__ == "__main__":
-    load_dotenv()
+# if __name__ == "__main__":
+#     load_dotenv()
 
-    rag_chain = get_rag_chain()
+#     rag_chain = get_rag_chain()
 
-    print("🔍 RAG Chatbot is ready! Type your question (or 'exit' to quit)\n")
-    while True:
-        query = input("You: ")
-        if query.lower() in ["exit", "quit", "bye"]:
-            print("👋 Bye!")
-            break
+#     print("🔍 RAG Chatbot is ready! Type your question (or 'exit' to quit)\n")
+#     while True:
+#         query = input("You: ")
+#         if query.lower() in ["exit", "quit", "bye"]:
+#             print("👋 Bye!")
+#             break
 
-        try:
-            answer = rag_chain.invoke(query)
-            print(f"Bot: {answer}\n")
-        except Exception as e:
-            print(f"⚠️ Error: {e}")
+#         try:
+#             answer = rag_chain.invoke(query)
+#             print(f"Bot: {answer}\n")
+#         except Exception as e:
+#             print(f"⚠️ Error: {e}")

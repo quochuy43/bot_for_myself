@@ -12,3 +12,15 @@ Mục tiêu & định hướng sự nghiệp
 Kỷ niệm đáng nhớ
 Triết lý sống, quan điểm cá nhân
 Liên hệ (LinkedIn, Github, email)
+
+Lifespan trong FastAPI là gì?
+Trong FastAPI, lifespan là cơ chế để quản lý vòng đời (lifecycle) của ứng dụng, tức là các tác vụ cần thực hiện khi ứng dụng khởi động (startup) và tắt (shutdown). Điều này rất hữu ích để thiết lập hoặc dọn dẹp các tài nguyên như kết nối cơ sở dữ liệu, cấu hình logging, hoặc khởi tạo các dịch vụ bên ngoài.
+FastAPI sử dụng @asynccontextmanager từ Python để định nghĩa các sự kiện lifecycle này. Với lifespan, bạn có thể đảm bảo rằng các tài nguyên được khởi tạo trước khi ứng dụng bắt đầu xử lý yêu cầu và được dọn dẹp sạch sẽ khi ứng dụng dừng.
+
+@asynccontextmanager trong FastAPI
+@asynccontextmanager là một decorator từ module contextlib trong Python, được sử dụng để tạo ra một async context manager. Trong FastAPI, nó được dùng để định nghĩa hàm lifespan, nơi bạn có thể:
+
+Thực hiện các tác vụ khởi động: Ví dụ, kết nối tới cơ sở dữ liệu, tải mô hình AI, hoặc thiết lập các cấu hình.
+Thực hiện các tác vụ dọn dẹp: Ví dụ, đóng kết nối cơ sở dữ liệu, lưu trạng thái, hoặc giải phóng tài nguyên.
+
+Hàm lifespan sẽ được FastAPI gọi tự động khi ứng dụng khởi động và khi ứng dụng tắt.

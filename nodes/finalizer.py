@@ -18,7 +18,10 @@ FORMAT:
 
 async def finalizer_node(state: MessagesState):
     messages = state["messages"]
-    finalizer_input = [SystemMessage(content=FINALIZER_PROMPT)] + messages + [
+    last_message = messages[-1]
+    finalizer_input = [
+        SystemMessage(content=FINALIZER_PROMPT),
+        last_message,
         # Ép model phải tạo final answer bằng cách bổ sung HumanMessage
         HumanMessage(content="Please compose the final answer for the user")
     ]

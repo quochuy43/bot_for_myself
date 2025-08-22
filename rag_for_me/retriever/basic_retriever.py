@@ -7,7 +7,7 @@ load_dotenv()
 
 _embeddings = None
 
-def get_retriever(collection_name="about_myself", k=2):
+def get_retriever(collection_name="about_myself", k=3):
     global _embeddings
     if _embeddings is None:
         _embeddings = GoogleGenerativeAIEmbeddings(

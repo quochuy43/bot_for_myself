@@ -10,7 +10,7 @@ from graph import graph_builder
 
 load_dotenv()
 
-DB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/history_chatbot")
+DB_URI = os.getenv("MONGODB_URI")
 
 # Test MongoDB connection
 try:

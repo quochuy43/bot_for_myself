@@ -12,18 +12,27 @@ def split_markdown_by_heading(file_path="rag_for_me/knowledge_base/personal_info
         if not section.strip():
             continue
         # Add '#' to keep old format
-        content = "# " + section.strip()
+        # content = "# " + section.strip()
+        # docs.append(Document(
+        #     page_content=content,
+        #     metadata={"category": content.split("\n")[0].replace("# ", "").strip()}
+        # ))
+
+        heading, *body = section.strip().split("\n", 1)
+        content = body[0] if body else "" # Just get content, ignore heading
+
         docs.append(Document(
-            page_content=content,
-            metadata={"category": content.split("\n")[0].replace("# ", "").strip()}
+            page_content=content.strip(),
+            metadata={"category": heading.strip()}
         ))
+
     return docs
 
 
 # chunks = split_markdown_by_heading()
 # for index, doc in enumerate(chunks, 1):
 #     print(f"--- Chunk {index} ---")
-#     print("Category:", doc.metadata["category"])
-#     print("Content:")
+#     # print("Category:", doc.metadata["category"])
+#     # print("Content:")
 #     print(doc.page_content)
 #     print()

@@ -4,7 +4,7 @@
         "."
     ],
     "graphs": {
-        "chatbot": "./main.py:graph"
+        "chatbot": "./graph.py:graph_builder"
     },
     "env": ".env"
 }

@@ -46,13 +46,13 @@ def load_vector_store(collection_name="about_myself"):
 if __name__ == "__main__":
 
     # Create DB
-    # docs = split_markdown_by_heading()
-    # vectorstore = create_vector_store(docs, collection_name="about_myself")
+    docs = split_markdown_by_heading()
+    vectorstore = create_vector_store(docs, collection_name="about_myself")
 
     # Test
-    vectorstore = load_vector_store(collection_name="about_myself")
-    query = "What is Huy's birthday?"
-    results = vectorstore.similarity_search(query, k=2)
-    print("\n🔎 Query:", query)
-    for r in results:
-        print("->", r.page_content, "| category:", r.metadata["category"])
+    # vectorstore = load_vector_store(collection_name="about_myself")
+    # query = "What is Huy's birthday?"
+    # results = vectorstore.similarity_search(query, k=2)
+    # print("\n🔎 Query:", query)
+    # for r in results:
+    #     print("->", r.page_content, "| category:", r.metadata["category"])

@@ -11,7 +11,7 @@ RULES:
 DEFINITIONS:
   SUPERVISOR:
   - When the user is asking ABOUT ME (the AI assistant, Huy).
-  - Includes: my personal profile, biography, interests, skills, projects, career goals, philosophies, idols, inspirations, memorable moments, or contact information.
+  - Includes: My personal information, family information, hobbies, personality, skills and strengths, weaknesses and challenges, goals and aspirations, memorable moments in life, health and physical well-being, learning path, relationships (family, friends, love), career and professional, major skills (it), idol / inspiration, completed projects, finances, viewpoint / motto / lifestyle, contact information.
   - Any question that uses "you" / "your" **to refer to ME (the assistant, Huy)** must be SUPERVISOR.
 
   FALLBACK:

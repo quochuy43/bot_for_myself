@@ -1,5 +1,5 @@
 from langchain_mongodb import MongoDBAtlasVectorSearch
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
@@ -10,8 +10,8 @@ _embeddings = None
 def get_retriever(collection_name="about_myself", k=3):
     global _embeddings
     if _embeddings is None:
-        _embeddings = GoogleGenerativeAIEmbeddings(
-            model="models/embedding-001"
+        _embeddings = OpenAIEmbeddings(
+            model="text-embedding-3-small",
         )
 
     client = MongoClient(os.getenv("MONGO_ATLAS"))

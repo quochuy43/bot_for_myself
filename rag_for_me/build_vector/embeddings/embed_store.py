@@ -1,5 +1,6 @@
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from rag_for_me.build_vector.loader.document_loader import split_markdown_by_heading
 from pymongo import MongoClient
 import os
@@ -7,9 +8,13 @@ from dotenv import load_dotenv
 load_dotenv()
  
 def create_vector_store(docs, collection_name="about_myself"):
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/embedding-001", 
-        google_api_key=os.getenv("GOOGLE_API_KEY")
+    # embeddings = GoogleGenerativeAIEmbeddings(
+    #     model="models/embedding-001", 
+    #     google_api_key=os.getenv("GOOGLE_API_KEY")
+    # )
+    embeddings = OpenAIEmbeddings(
+        model="text-embedding-3-small",
+        api_key=os.getenv("OPENAI_API_KEY") 
     )
  
     client = MongoClient(os.getenv("MONGO_ATLAS"))
@@ -26,9 +31,13 @@ def create_vector_store(docs, collection_name="about_myself"):
 
 
 def get_embeddings():
-    return GoogleGenerativeAIEmbeddings(
-        model="models/embedding-001",
-        google_api_key=os.getenv("GOOGLE_API_KEY")
+    # return GoogleGenerativeAIEmbeddings(
+    #     model="models/embedding-001",
+    #     google_api_key=os.getenv("GOOGLE_API_KEY")
+    # )
+    return OpenAIEmbeddings(
+        model="text-embedding-3-small",
+        api_key=os.getenv("OPENAI_API_KEY")
     )
 
 def load_vector_store(collection_name="about_myself"):

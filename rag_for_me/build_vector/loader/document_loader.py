@@ -32,7 +32,7 @@ def split_markdown_by_heading(file_path="rag_for_me/knowledge_base/personal_info
 # chunks = split_markdown_by_heading()
 # for index, doc in enumerate(chunks, 1):
 #     print(f"--- Chunk {index} ---")
-#     # print("Category:", doc.metadata["category"])
+#     print("Category:", doc.metadata["category"])
 #     # print("Content:")
 #     print(doc.page_content)
 #     print()

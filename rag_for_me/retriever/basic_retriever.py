@@ -14,8 +14,8 @@ def get_retriever(collection_name="about_myself", k=3):
             model="models/embedding-001"
         )
 
-    client = MongoClient(os.getenv("MONGO_ATLAS_LOCAL"))
-    db = client["myself_db"]
+    client = MongoClient(os.getenv("MONGO_ATLAS"))
+    db = client["vector_store"]
     collection = db[collection_name]
 
     vectordb = MongoDBAtlasVectorSearch(

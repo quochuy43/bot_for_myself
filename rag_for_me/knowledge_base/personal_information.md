@@ -59,7 +59,6 @@
 - Hometown: Giap Kien, Kim Tra, Hue
 - Current residence: 14 Hoang Cong Chat, Khue My, Ngu Hanh Son, Da Nang City
 - Languages ​​spoken: Viet Nam
-- 
 
 # Family information: 
 - Current family members: 6 people including grandpa, dad, mom, me, younger sister, younger brother

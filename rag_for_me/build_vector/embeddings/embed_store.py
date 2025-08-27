@@ -1,8 +1,8 @@
-from langchain_mongodb import MongoDBAtlasVectorSearch
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_community.vectorstores import MongoDBAtlasVectorSearch
 from langchain_openai import OpenAIEmbeddings
 from rag_for_me.build_vector.loader.document_loader import split_markdown_by_heading
 from pymongo import MongoClient
+
 import os
 from dotenv import load_dotenv
 load_dotenv()

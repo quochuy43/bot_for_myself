@@ -1,4 +1,4 @@
-from langchain_mongodb import MongoDBAtlasVectorSearch
+from langchain_community.vectorstores import MongoDBAtlasVectorSearch
 from langchain_openai import OpenAIEmbeddings
 from pymongo import MongoClient
 import os

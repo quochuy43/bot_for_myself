@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from contextlib import asynccontextmanager
 import os
 from graph import graph_builder 
+from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
 
@@ -42,6 +43,18 @@ async def lifespan(app: FastAPI):
         print("🛑 Closed MongoDB saver")
 
 app = FastAPI(title="Chatbot API", lifespan=lifespan)
+
+origins = [
+    "http://localhost:5173",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/chat")
 async def chat(request: ChatRequest):

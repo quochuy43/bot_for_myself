@@ -46,6 +46,7 @@ app = FastAPI(title="Chatbot API", lifespan=lifespan)
 
 origins = [
     "http://localhost:5173",
+    "https://chatwithlvqh.vercel.app"
 ]
 
 app.add_middleware(

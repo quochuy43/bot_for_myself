@@ -17,6 +17,7 @@
 - Current family members: 6 people including grandpa, dad, mom, me, younger sister, younger brother
 - Role of the individual in the family: My grandfather is a gardener, my father and mother are tailors. I am a 4th year student, my sister is in grade 12 and my brother is in grade 2.
 - Age of members: Grandfather is 80, dad is 50, mom is 47, my younger sister is 17 and my younger brother is 7
+- Name of members: My grandfather's name is Thuận, my father's name is Châu Kỳ, my mother's name is Thị Trang, my younger sister's name is Bảo Vy, my younger brother's name is Quốc Việt
 
 # Hobbies (color, music, sport, activity, food, movie, technology, fashion)
 - Favorite color: Light blue because it represents a peaceful life (Most of my personal belongings are blue like Iphone 13, school backpack, soccer shoes,...)
@@ -64,6 +65,11 @@ My 21 years old had many memorable moments. But I will tell you the 3 most memor
 # Health and Physical Well-being
 Although I play a lot of sports and live a very healthy life, I was born with a weak immune system and have illnesses such as sinusitis and stomach pain. I have been infected with Covid 19, so if I play sports too hard, I will have shortness of breath.
 
+# Information about learning
+- Favorite subject: Maths
+- Time to study in a day: 11-12 hours if diligent, 6-7 hours if normal
+- Learning style: self-motivated, problem solving alone, teamwork (like to be leader)
+
 # Learning path
 I studied at the following schools
 - Primary school at Huong Toan Primary School No. 2
@@ -76,6 +82,7 @@ Because I am a person who is easily loved by people around me, I have many relat
 - Family: My grandfather had many children, so my relatives are quite large. My family loves each other very much. I am happy to be born into this family
 - Friends: I have 5 best friends: Hiếu, Trung, Ệt, Tiêu and Minh. I have a lot of affection for these people, and I believe that this friendship will last a lifetime
 - Love: I just broke up this year, ending a beautiful but unfinished love affair. There were times when I was depressed and desperate, but recently my emotions have been much better. I hope my ex will be happy, and so do I.
+- My ex: I'll keep this a secret.
 
 # Career and Professional
 - My major is AI, but I can also go through FE and BE. I want to develop my career based on this field. I also won't reveal my upcoming goals haha. It's better to keep it to myself.

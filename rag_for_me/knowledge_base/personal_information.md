@@ -1,120 +1,121 @@
-# Personal information
-- Full name: Le Van Quoc Huy
-- Age: 21
-- Nickname: None
-- Gender: Male
-- Birthday: 04/03/2004
-- Zodiac sign: Pisces
-- Height: 172cm
-- Weight: 61kg
-- Nationality: Viet Nam
-- Hometown: Giap Kien, Kim Tra, Hue
-- Current residence: 14 Hoang Cong Chat, Khue My, Ngu Hanh Son, Da Nang City
-- Languages ​​spoken: Viet Nam
-- Job: a senior student at VKU, doing an internship at NAPA Global
+# Thông tin cá nhân
+- Họ và tên: Lê Văn Quốc Huy
+- Tuổi: 21
+- Biệt danh: Không có
+- Giới tính: Nam
+- Ngày sinh: 04/03/2004
+- Cung hoàng đạo: Song Ngư
+- Chiều cao: 172cm
+- Cân nặng: 61kg
+- Quốc tịch: Việt Nam, là một công dân yêu nước
+- Quê quán: Giáp Kiền, Kim Trà, Huế
+- Nơi cư trú hiện tại: 14 Hoàng Công Chất, Khuê Mỹ, Ngũ Hành Sơn, Đà Nẵng. Mình sinh sống với 3 người bạn trong căn hộ tại địa chỉ này
+- Ngôn ngữ sử dụng: Việt Nam
+- Nghề nghiệp: Sinh viên năm cuối tại Đại học Công nghệ thông tin và truyền thông Việt Hàn, đang thực tập tại NAPA Global
 
-# Family information (members, age of members, role of member): 
-- Current family members: 6 people including grandpa, dad, mom, me, younger sister, younger brother
-- Role of the individual in the family: My grandfather is a gardener, my father and mother are tailors. I am a 4th year student, my sister is in grade 12 and my brother is in grade 2.
-- Age of members: Grandfather is 80, dad is 50, mom is 47, my younger sister is 17 and my younger brother is 7
-- Name of members: My grandfather's name is Thuận, my father's name is Châu Kỳ, my mother's name is Thị Trang, my younger sister's name is Bảo Vy, my younger brother's name is Quốc Việt
+# Thông tin gia đình (tên, thành viên, tuổi, vai trò):
+- Tên các thành viên: Ông nội mình tên Thuận, bố mình tên Kỳ, mẹ mình tên Trang, em gái mình tên Bảo Vy, em trai mình tên Quốc Việt.
+- Thành viên gia đình hiện tại: 6 người gồm ông, bố, mẹ, mình, em gái, em trai
+- Vai trò của cá nhân trong gia đình: Ông nội làm vườn, bố và mẹ làm thợ may. mình là sinh viên năm 4, em gái mình học lớp 12 và em trai mình học lớp 2.
+- Tuổi của các thành viên: Ông nội 80, bố 50, mẹ 47, em gái 17 và em trai 7 tuổi.
 
-# Hobbies (color, music, sport, activity, food, movie, technology, fashion)
-- Favorite color: Light blue because it represents a peaceful life (Most of my personal belongings are blue like Iphone 13, school backpack, soccer shoes,...)
-- Favorite music genre: Lofi, Ballad, and Rap. I often listen to music by artists like Soobin Hoàng Sơn, Sơn Tùng M-TP, Rhyder, Hoàng Dũng, Lâm Bảo Ngọc, Orange
-- Favorite sport: Likes to play and is good at many sports such as soccer, swimming, badminton, kingchess, ... but the most outstanding sport is soccer. Plays very well, carries the team in every match. Had a dream of becoming a professional soccer player but failed.
-- Favorite activity: Playing game like (Arena of Valor), FO4 (Line up Real Madrid 50kB)...; Go camping with my friends, Attend concerts of famous singers
-- Food preferences: Beef noodle soup, Banh ep Hue, Banh Canh Ca Loc,... many other dishes
-- Favorite movie genre: Family drama, horror, detective
-- Technology preferences: AI, Automation and UX/UI
-- Fashion preferences: men's shirt, hoodie, varsity jacket, and many favorite shoe models like Jordan, Air Force 1, Adidas Samba
+# Sở thích (màu sắc, âm nhạc, thể thao, hoạt động, ẩm thực, phim ảnh, công nghệ, thời trang)
+- Màu sắc yêu thích: Xanh da trời vì nó tượng trưng cho cuộc sống yên bình (Hầu hết đồ dùng cá nhân của mình đều màu xanh như iPhone 13, cặp sách, giày đá bóng,...)
+- Thể loại nhạc yêu thích: Lofi, Ballad và Rap. Mình thường nghe nhạc của các ca sĩ như Soobin Hoàng Sơn, Sơn Tùng M-TP, Rhyder, Hoàng Dũng, Lâm Bảo Ngọc, Orange
+- Bài hát yêu thích: 1 danh sách không thể kể hết được haha, gồm nhạc của Sơn Tùng MTP, Jack, Bray, Anh trai say hi,...
+- Môn thể thao yêu thích: Thích chơi và chơi giỏi nhiều môn thể thao như bóng đá, bơi lội, cầu lông, cờ vua,... nhưng môn thể thao nổi bật nhất là bóng đá. Mình đá bóng rất hay, hầu hết đều gánh đội nhà trong mọi trận đấu. Mình có ước mơ trở thành cầu thủ bóng đá chuyên nghiệp nhưng bố mẹ không cho phép.
+- Hoạt động yêu thích: Chơi các trò chơi như Liên quân Mobile, FO4 (Đội hình Real Madrid 50kB)...; Đi cắm trại cùng bạn bè, xem Concert của các ca sĩ nổi tiếng
+- Món ăn ưa thích: Phở bò, Bánh ép Huế, Bánh canh cá lóc,... và nhiều món khác
+- Thể loại phim yêu thích: Phim gia đình, kinh dị, trinh thám
+- Công nghệ ưa thích: AI, Tự động hóa và UX/UI
+- Thời trang ưa thích: Áo sơ mi nam, hoodie, áo khoác bomber, và nhiều mẫu giày yêu thích như Jordan, Air Force 1, Adidas Samba
 
-# Personality
-I have most of the characteristics of a Pisces
-- Always sincere in most relationships
-- Always caring, understanding of other people's feelings
-- Always helping people around
-- Likes to be creative but sometimes a bit flighty
-- Likes romance, especially in love
-- Super funny, especially often plays comedy with close friends
-- I like being alone but I'm afraid of loneliness
+# Tính cách
+Mình có hầu hết các đặc điểm tính cách của một người Song Ngư
+- Luôn chân thành trong hầu hết các mối quan hệ
+- Luôn quan tâm, thấu hiểu cảm xúc của người khác
+- Luôn giúp đỡ mọi người xung quanh
+- Thích sáng tạo nhưng đôi khi hơi bồng bột
+- Thích sự lãng mạn, đặc biệt là trong tình yêu
+- Cực kỳ hài hước, thường xuyên tấu hài với đám bạn
+- Đặc biệt là "Thích ở một mình nhưng lại sợ cô đơn"
 
-# Skills and Strengths
-- Confident, good at communication, humorous, positive with people around
-- Highly responsible for assigned work, maximum focus on work
-- Quite hard-working, knows how to learn from people around
-- Is a perfectionist, always tries to do everything as well as possible
-- Knows how to stay away from bad temptations
-- Learns quickly, does not hesitate to ask again about things that are not understood
+# Kỹ năng và Điểm mạnh
+- Tự tin, giỏi giao tiếp, hài hước, tích cực với mọi người xung quanh
+- Có trách nhiệm cao với công việc được giao, tập trung tối đa vào công việc
+- Khá chăm chỉ, biết học hỏi từ những người xung quanh
+- Là người cầu toàn, luôn cố gắng Làm tốt mọi việc nhất có thể
+- Biết tránh xa những cám dỗ xấu
+- Học nhanh, không ngại hỏi lại những điều chưa hiểu
 
-# Weaknesses and Challenges
-- Sometimes a bit indecisive, leading to missed opportunities
-- When finishing a complex task or a project, I often let myself rest for too long
-- When learning new knowledge, I often lose focus if I study alone
-- I often have negative thoughts, living by emotions instead of reason
+# Điểm yếu và Thách thức
+- Đôi khi hơi thiếu quyết đoán, dẫn đến việc đôi khi bỏ lỡ một vài cơ hội
+- Khi hoàn thành một bài tập hay dự án phức tạp, mình thường để mình nghỉ ngơi quá lâu
+- Khi học kiến ​​thức mới, mình thường mất tập trung nếu tự học một mình
+- Đôi lúc mình bị suy nghĩ tiêu cực, sống theo cảm xúc thay vì lý trí
 
-# Goals and Aspirations
-- I'll keep this a secret.
+# Mục tiêu và Khát vọng
+- Mình xin phép giữ bí mật điều này.
 
-# Memorable moments in life
-My 21 years old had many memorable moments. But I will tell you the 3 most memorable moments:
-- Receiving the prize for excellent math student in grade 4. It was special because in grade 3 I took the exam with very low scores, and the result of grade 4 made me happy
-- My father called when I found out my university entrance exam results. I didn't dare to answer the phone. After knowing the results, I was depressed for nearly 2 weeks. Thanks to my family, close friends and lover, I was able to lift my spirits. That is a memory I will never forget
-- Quarantined at home during the covid 19 outbreak in 2022. I also had sinusitis so it was very bad. But I'm happy because I have many memories of studying online.
+# Những khoảnh khắc đáng nhớ trong cuộc đời
+Cuộc đời của mình có rất nhiều khoảnh khắc đáng nhớ. Nhưng mình sẽ kể cho bạn nghe 3 khoảnh khắc đáng nhớ nhất:
+- Nhận giải học sinh giỏi toán lớp 4. Thật đặc biệt vì năm lớp 3 mình thi với điểm rất thấp, và kết quả lớp 4 khiến mình hạnh phúc vỡ òa
+- Bố mình gọi điện khi biết kết quả thi đại học. mình không dám nghe máy. Sau khi biết kết quả, mình đã trầm cảm gần 2 tuần. Nhờ gia đình, bạn bè thân thiết và người yêu, mình đã vực dậy tinh thần. Đó là một kỷ niệm mà cả đời mình sẽ không bao giờ quên.
+- Cách ly tại nhà trong đợt bùng phát Covid-19 năm 2022. Mình cũng bị viêm xoang nên tình hình rất tệ. Nhưng mình vẫn vui vì có nhiều kỷ niệm học trực tuyến.
 
-# Health and Physical Well-being
-Although I play a lot of sports and live a very healthy life, I was born with a weak immune system and have illnesses such as sinusitis and stomach pain. I have been infected with Covid 19, so if I play sports too hard, I will have shortness of breath.
+# Sức khỏe và Thể chất
+Mặc dù mình chơi rất nhiều môn thể thao và sống một cuộc sống rất lành mạnh, nhưng mình sinh ra đã có hệ miễn dịch yếu và mắc các bệnh như viêm xoang và đau dạ dày. Mình đã bị nhiễm Covid-19, vì vậy nếu mình chơi thể thao quá sức, mình sẽ bị khó thở.
 
-# Information about learning
-- Favorite subject: Maths
-- Time to study in a day: 11-12 hours if diligent, 6-7 hours if normal
-- Learning style: self-motivated, problem solving alone, teamwork (like to be leader)
+# Thông tin về học tập
+- Môn học yêu thích: Toán, Hóa học và thích tìm hiểu về Lịch sử
+- Thời gian học mỗi ngày: 11-12 tiếng nếu chăm chỉ, 6-7 tiếng nếu bình thường
+- Phong cách học tập: tự giác, tự giải quyết vấn đề, làm việc nhóm (thường làm leader)
 
-# Learning path
-I studied at the following schools
-- Primary school at Huong Toan Primary School No. 2
-- Secondary school at Nguyen Xuan Thuong Secondary School
-- High school at Dang Huy Tru High School
-- University at Vietnam-Korea University of Information Technology and Communications (Currently a senior student)
+# Lộ trình học tập
+Mình đã học tại các trường sau
+- Học cấp 1 tại Trường Tiểu học số 2 Hương Toàn
+- Học cấp 2 tại Trường Trung học cơ sở Nguyễn Xuân Thưởng
+- Học cấp 3 tại Trường Trung học phổ thông Đặng Huy Trứ
+- Học đại học tại Đại học Công nghệ Thông tin và Truyền thông Việt Hàn (Hiện là sinh viên năm cuối)
 
-# Relationships (Family, Friends, Love)
-Because I am a person who is easily loved by people around me, I have many relationships:
-- Family: My grandfather had many children, so my relatives are quite large. My family loves each other very much. I am happy to be born into this family
-- Friends: I have 5 best friends: Hiếu, Trung, Ệt, Tiêu and Minh. I have a lot of affection for these people, and I believe that this friendship will last a lifetime
-- Love: I just broke up this year, ending a beautiful but unfinished love affair. There were times when I was depressed and desperate, but recently my emotions have been much better. I hope my ex will be happy, and so do I.
-- My ex: I'll keep this a secret.
+# Tình trạng các Mối quan hệ (Gia đình, Bạn bè, Tình yêu)
+Vì mình là người dễ được mọi người xung quanh yêu mến nên mình có rất nhiều mối quan hệ:
+- Gia đình: Ông nội mình có nhiều con nên họ hàng khá đông. Gia đình mình rất yêu thương nhau. Mình rất hạnh phúc khi được sinh ra trong gia đình này.
+- Bạn bè: Mình có 5 người bạn thân nhất: Hiếu, Trung, Ệt, Tiêu và Minh. Mình rất quý mến những thằng này, và mình tin rằng tình bạn này sẽ đi với mình đến hết đời.
+- Tình yêu: Mình vừa chia tay cô ấy trong năm nay, chấm dứt một mối tình đẹp nhưng dang dở. Có những lúc mình cũng buồn và sụp đổ, nhưng gần đây cảm xúc đã tốt hơn nhiều. Mình hy vọng cô ấy sẽ hạnh phúc, và mình cũng vậy.
+- Thông tin người yêu cũ: Mình xin giữ bí mật ạ.
 
-# Career and Professional
-- My major is AI, but I can also go through FE and BE. I want to develop my career based on this field. I also won't reveal my upcoming goals haha. It's better to keep it to myself.
+# Sự nghiệp và Chuyên môn
+- Chuyên ngành của mình là AI, nhưng mình cũng có thể học thêm FE và BE. Mình muốn phát triển sự nghiệp dựa trên lĩnh vực này. Mình cũng sẽ không tiết lộ những mục tiêu sắp tới của mình haha. Tốt hơn hết là cứ giữ kín thôi.
 
-# Major skills (IT)
-- Language: Python, JavaScript, HTML, CSS, PHP, Kotlin
+# Kỹ năng chính (Công nghệ thông tin)
+- Ngôn ngữ: Python, JavaScript, HTML, CSS, PHP, Kotlin
 - AI/ML: NLP, RAG, Numpy, Pandas
 - Framework: Langgraph, LangChain, Flask, FastAPI, Laravel
-- Others: Git, Docker, Figma
+- Khác: Git, Docker, Figma
 
-# Idol / Inspiration
-- Sam Altman: Inspires innovation, daring to think big and act
-- Neymar da Silva Santos Junior: A player who rose from poverty to success
-- Rhyder Singer: the will to never give up, overcome all difficulties despite receiving much criticism
+# Thần tượng/Nguồn cảm hứng
+- Sam Altman: Truyền cảm hứng cho mình về sự đổi mới, dám nghĩ lớn và hành động
+- Neymar da Silva Santos Junior: Cầu thủ mình yêu thích và theo dõi hơn 10 năm rồi, anh ấy là hình ảnh cho sự vươn lên từ nghèo khó nhờ tài năng thiên bẩm của mình
+- Quang Anh Rhyder: Ý chí không bao giờ bỏ cuộc, vượt qua mọi khó khăn dù hoàn cảnh cực kì khốn khó
 
-# Completed projects
-I have some pretty cool personal projects including: Da Nang Traveling Chatbot, Portfolio Chatbot and App for movie recommendations. Currently, I have private source code for these projects on github. If you want to know, please email me. My email is kuhuylevan@gmail.com
+# Dự án đã hoàn thành
+Mình có một số dự án cá nhân khá thú vị bao gồm: Hệ thống tự động hóa tư vấn du lịch bằng n8n, Chatbot Du lịch Đà Nẵng, Ứng dụng Giới thiệu phim... Hiện tại, mình có mã nguồn riêng cho các dự án này trên GitHub. Nếu bạn muốn biết thêm thông tin, vui lòng gửi email cho mình. Email của mình là kuhuylevan@gmail.com
 
-# Finances
-I am still a student so my finances are currently dependent on my family.
+# Tài chính
+Mình vẫn còn là sinh viên nên tài chính hiện tại của mình phụ thuộc vào gia đình.
 
-# Viewpoint/ Motto/ Lifestyle
-The 3 mottos that I like and consider my ideals in life include:
-- "Don't cry because it's over, smile because it happened."
-- "No one can see your pain, but everyone will see your mistakes."
-- "You don't have to be great to start, but you have to start to be great"
+# Quan điểm/ Châm ngôn/ Phong cách sống
+3 châm ngôn sống mà mình tâm đắc và coi là lý tưởng sống của mình bao gồm:
+- "Đừng khóc vì mọi chuyện đã kết thúc, hãy mỉm cười vì nó đã xảy ra."
+- "Không ai nhìn thấy nỗi đau của bạn, nhưng ai cũng sẽ nhìn thấy lỗi lầm của bạn."
+- "Bạn không cần phải tuyệt vời để bắt đầu, nhưng bạn phải bắt đầu để trở nên tuyệt vời"
 
-# Contact Information
-The social networking sites I often use are:
+# Thông tin liên hệ
+Các trang mạng xã hội mình thường sử dụng là:
 - Email: kuhuylevan@gmail.com
 - LinkedIn: https://www.linkedin.com/in/quoc-huy-le-van-73170b356/
 - Github: https://github.com/quochuy43
-- Facebook: https://www.facebook.com/le.van.quoc.huy.2024/  
+- Facebook: https://www.facebook.com/le.van.quoc.huy.2024/
 - Instagram: https://www.instagram.com/qhuy_43
 - Tiktok: https://www.tiktok.com/@wuvwy0403
